@@ -5,10 +5,10 @@
 }
 
 header {
-    height: 120px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
 
 header > div {
@@ -24,19 +24,19 @@ header > div:first-of-type > img {
     height: 42px;
 }
 
-hgroup {
+header hgroup {
     height: 42px;
 }
 
-hgroup > h1, hgroup > h2 {
+hgroup > h1, hgroup > h2, hgroup > h3 {
     margin: 0;
 }
 
-hgroup > h1 {
+header hgroup > h1 {
     font-size: 16pt;
 }
 
-hgroup > h2 {
+header hgroup > h2 {
     font-size: 12pt;
 }
 
@@ -50,4 +50,34 @@ header > div:nth-of-type(2) > img {
 
 #iconSpace {
     margin-left: 8px;
+}
+
+hr {
+    background-image: url('img/hr-img.png');
+    height: 14px;
+    border: none;
+}
+
+#firstMainFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+main hgroup > h2 {
+    font-size: 24pt;
+}
+
+#print-line {
+    display: inline;
+    position: relative;
+    width: 76px;
+}
+
+#print-line > div {
+    position: absolute;
+    bottom: 0px;
+}
+
+#print-line h3 {
+    display: inline;
 }
